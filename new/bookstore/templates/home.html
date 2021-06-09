@@ -3,15 +3,12 @@
 {% load static%}
 {% block title %}Home{% endblock title %}
 {% block content %}
-<h1>Homepage</h1>
+<h1>Главная страница</h1>
 <img class="bookcover" src="{% static 'images/cat.jpg' %}">
 {% if user.is_authenticated %}
     <p></p>
     Hi {{ user.username }}!
-    <p><a href="{% url 'logout' %}">Log Out</a></p>
 {% else %}
-    <p>You are not logged in</p>
-    <a href="{% url 'login' %}">Log In</a>
-    <a href="{% url 'signup' %}">Sign Up</a>
+    <p>Вы не вошли как пользователь!</p>
 {% endif %}
 {% endblock content %}
