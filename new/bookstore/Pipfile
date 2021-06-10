@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django = "==2.2.3"
 django-crispy-forms = "==1.7.1"
+django-allauth = "==0.38.0"
 
 [dev-packages]
 
